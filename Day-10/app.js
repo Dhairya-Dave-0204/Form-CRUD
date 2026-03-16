@@ -17,7 +17,7 @@ app.get("/test-ejs", (req, res) => {
 })
 
 app.get("/", (req, res) => {
-  res.send("Hello Mate, here's the form!!")
+  res.send("Hello Mate,  the form is on the url: http://localhost:3000/test-ejs")
 })
 
 // import and setup of the routes
