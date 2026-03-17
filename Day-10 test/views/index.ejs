@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+
+  <body>
+    <div class="basic_detail">
+      <h1>Job Application Form</h1>
+      <form class="application_form" id="application_form">
+        <!-- ------ Personal Information ------ -->
+        <fieldset class="basic_info" id="basic_info">
+          <legend>Personal Information</legend>
+
+          <div class="name_dob_gender_mail">
+            <div class="input-container">
+              <label for="fname">First Name</label>
+              <input type="text" name="fname" id="fname" placeholder="John" />
+            </div>
+
+            <div class="input-container">
+              <label for="lname">Last Name</label>
+              <input type="text" name="lname" id="lname" placeholder="Doe" />
+            </div>
+
+            <div class="input-container">
+              <label for="dob">D.O.B</label>
+              <input
+                type="date"
+                name="dob"
+                id="dob"
+                min="1990-01-01"
+                max="2020-12-31"
+              />
+            </div>
+
+            <div class="input-container gender" id="gender">
+              <label id="gender_label">Gender :</label>
+
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" value="male" />
+
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="female" value="female" />
+            </div>
+
+            <div class="input-container">
+              <label for="email">E-mail</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="example@xyz.com"
+              />
+            </div>
+          </div>
+
+          <div class="contact_desig_relation">
+            <div class="input-container">
+              <label for="phone">Phone</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="9876543210"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="designation">Designation</label>
+              <input
+                type="text"
+                name="designation"
+                id="designation"
+                placeholder="Your position"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="relation">Relationship</label>
+              <select name="relation" id="relation">
+                <option value="" selected disabled>Select status</option>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+              </select>
+            </div>
+
+            <div class="input-container address">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Enter your complete address"
+              />
+            </div>
+          </div>
+
+          <div class="city_state_zip">
+            <div class="input-container">
+              <label for="city">City</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="City name"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="state">State</label>
+              <select name="state" id="state">
+                <option value="" selected disabled>Select state</option>
+                <option value="AN">Andaman and Nicobar Islands</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="AR">Arunachal Pradesh</option>
+                <option value="AS">Assam</option>
+                <option value="BR">Bihar</option>
+                <option value="CH">Chandigarh</option>
+                <option value="CT">Chhattisgarh</option>
+                <option value="DN">Dadra and Nagar Haveli</option>
+                <option value="DD">Daman and Diu</option>
+                <option value="DL">Delhi</option>
+                <option value="GA">Goa</option>
+                <option value="GJ">Gujarat</option>
+                <option value="HR">Haryana</option>
+                <option value="HP">Himachal Pradesh</option>
+                <option value="JK">Jammu and Kashmir</option>
+                <option value="JH">Jharkhand</option>
+                <option value="KA">Karnataka</option>
+                <option value="KL">Kerala</option>
+                <option value="LA">Ladakh</option>
+                <option value="LD">Lakshadweep</option>
+                <option value="MP">Madhya Pradesh</option>
+                <option value="MH">Maharashtra</option>
+                <option value="MN">Manipur</option>
+                <option value="ML">Meghalaya</option>
+                <option value="MZ">Mizoram</option>
+                <option value="NL">Nagaland</option>
+                <option value="OR">Odisha</option>
+                <option value="PY">Puducherry</option>
+                <option value="PB">Punjab</option>
+                <option value="RJ">Rajasthan</option>
+                <option value="SK">Sikkim</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="TG">Telangana</option>
+                <option value="TR">Tripura</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="UT">Uttarakhand</option>
+                <option value="WB">West Bengal</option>
+              </select>
+            </div>
+
+            <div class="input-container">
+              <label for="zipcode">Zipcode</label>
+              <input
+                type="text"
+                name="zipcode"
+                id="zipcode"
+                placeholder="Ex: 364001"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- ------ Education ------ -->
+        <fieldset class="education" id="education">
+          <legend>Education details</legend>
+
+          <div class="add_remove">
+            <h3>Add or remove the education records</h3>
+            <button type="button" class="add" id="add_edu">Add Record</button>
+            <button type="button" class="remove" id="rem_edu">
+              Remove Record
+            </button>
+          </div>
+        </fieldset>
+
+        <!-- ------ Work Experience ------ -->
+        <fieldset class="work" id="work">
+          <legend>Work Experience</legend>
+
+          <div class="add_remove">
+            <h3>Add or remove the work records</h3>
+            <button type="button" class="add" id="add_work">Add Record</button>
+            <button type="button" class="remove" id="rem_work">
+              Remove Record
+            </button>
+          </div>
+        </fieldset>
+
+        <!-- ------ Languages ------ -->
+        <fieldset class="languages" id="languages">
+          <legend>Languages Known</legend>
+
+          <div class="language_record">
+            <div class="input-container">
+              <label for="hindi">Hindi</label>
+              <input type="checkbox" name="hindi" id="hindi" />
+            </div>
+
+            <div class="input-container">
+              <label>Speak</label>
+              <input type="checkbox" id="speak1" />
+            </div>
+
+            <div class="input-container">
+              <label>Write</label>
+              <input type="checkbox" id="write1" />
+            </div>
+
+            <div class="input-container">
+              <label>Read</label>
+              <input type="checkbox" id="read1" />
+            </div>
+          </div>
+
+          <div class="language_record">
+            <div class="input-container">
+              <label for="gujarati">Gujarati</label>
+              <input type="checkbox" name="gujarati" id="gujarati" />
+            </div>
+
+            <div class="input-container">
+              <label>Speak</label>
+              <input type="checkbox" id="speak2" />
+            </div>
+
+            <div class="input-container">
+              <label>Write</label>
+              <input type="checkbox" id="write2" />
+            </div>
+
+            <div class="input-container">
+              <label>Read</label>
+              <input type="checkbox" id="read2" />
+            </div>
+          </div>
+
+          <div class="language_record">
+            <div class="input-container">
+              <label for="english">English</label>
+              <input type="checkbox" name="english" id="english" />
+            </div>
+
+            <div class="input-container">
+              <label>Speak</label>
+              <input type="checkbox" id="speak3" />
+            </div>
+
+            <div class="input-container">
+              <label>Write</label>
+              <input type="checkbox" id="write3" />
+            </div>
+
+            <div class="input-container">
+              <label>Read</label>
+              <input type="checkbox" id="read3" />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- ------ Technologies ------ -->
+        <fieldset class="technologies" id="technologies">
+          <legend>Technologies Known</legend>
+
+          <div class="tech_record">
+            <div class="input-container">
+              <label for="js">Javascript</label>
+              <input type="checkbox" name="js" id="js" />
+            </div>
+
+            <div class="input-container">
+              <label>Beginner</label>
+              <input type="radio" name="js_level" />
+            </div>
+
+            <div class="input-container">
+              <label>Intermediate</label>
+              <input type="radio" name="js_level" />
+            </div>
+
+            <div class="input-container">
+              <label>Advanced</label>
+              <input type="radio" name="js_level" />
+            </div>
+          </div>
+
+          <div class="tech_record">
+            <div class="input-container">
+              <label for="node">Node</label>
+              <input type="checkbox" name="node" id="node" />
+            </div>
+
+            <div class="input-container">
+              <label>Beginner</label>
+              <input type="radio" name="node_level" />
+            </div>
+
+            <div class="input-container">
+              <label>Intermediate</label>
+              <input type="radio" name="node_level" />
+            </div>
+
+            <div class="input-container">
+              <label>Advanced</label>
+              <input type="radio" name="node_level" />
+            </div>
+          </div>
+
+          <div class="tech_record">
+            <div class="input-container">
+              <label for="react">React</label>
+              <input type="checkbox" name="react" id="react" />
+            </div>
+
+            <div class="input-container">
+              <label>Beginner</label>
+              <input type="radio" name="react_level" />
+            </div>
+
+            <div class="input-container">
+              <label>Intermediate</label>
+              <input type="radio" name="react_level" />
+            </div>
+
+            <div class="input-container">
+              <label>Advanced</label>
+              <input type="radio" name="react_level" />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- ------ References ------ -->
+        <fieldset class="reference" id="reference">
+          <legend>References</legend>
+
+          <div class="reference_record">
+            <div class="input-container">
+              <label for="ref_name">Reference Name</label>
+              <input
+                type="text"
+                name="ref_name"
+                id="ref_name"
+                placeholder="Jon Doe"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="ref_contact">Reference Contact</label>
+              <input
+                type="text"
+                name="ref_contact"
+                id="ref_contact"
+                placeholder="9876543210"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="ref_relation">Reference Relation</label>
+              <input
+                type="text"
+                name="ref_relation"
+                id="ref_relation"
+                placeholder="Friend"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- ------ Preferences ------ -->
+        <fieldset class="preference" id="preference">
+          <legend>Preferences</legend>
+
+          <div class="location_notice_department">
+            <div class="input-container">
+              <label for="location">Preferred Location</label>
+              <select name="location" id="location">
+                <option value="" selected disabled>Select state</option>
+                <option value="GJ">Gujarat</option>
+                <option value="MH">Maharashtra</option>
+                <option value="DL">Delhi</option>
+              </select>
+            </div>
+
+            <div class="input-container">
+              <label for="notice">Notice Period (Months)</label>
+              <input
+                type="text"
+                name="notice"
+                id="notice"
+                placeholder="Ex: 2"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="department">Department</label>
+              <select name="department" id="department">
+                <option value="" selected disabled>Select Department</option>
+                <option value="dev">Development</option>
+                <option value="hr">Human Resources</option>
+                <option value="qa">Quality Assurance</option>
+                <option value="ba">Business Analyst</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="current_expected">
+            <div class="input-container">
+              <label for="expected">Expected CTC (Lakhs)</label>
+              <input
+                type="text"
+                name="expected"
+                id="expected"
+                placeholder="Ex: 10"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="current">Current CTC (Lakhs)</label>
+              <input
+                type="text"
+                name="current"
+                id="current"
+                placeholder="Ex: 6"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- ------ Submit ------ -->
+        <div class="submit_section">
+          <input type="submit" value="Submit" id="submit" />
+          <input type="reset" value="Reset" id="reset" />
+        </div>
+      </form>
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>

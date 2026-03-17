@@ -378,8 +378,9 @@ function validateWork() {
 }
 
 // ------ Main function to check the validation of all section combined ------
-function validateForm(event) {
-  event.preventDefault();
+function validateForm() {
+  e.preventDefault()
+
   let isFormValid = true;
 
   if (!validateBasicInfo()) isFormValid = false;
@@ -391,29 +392,32 @@ function validateForm(event) {
   if (!validateWork()) isFormValid = false;
 
   if (isFormValid) {
+    alert("Form submitted successfully!");
     const data = collectFormData();
-
-    fetch("/form/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((result) => {
-        alert("Form submitted successfully!");
-        console.log("Backend response:", result);
-      })
-      .catch((error) => {
-        console.error("Error in submitting the form: ", error);
-        alert("Error submitting form. Please try again.");
-      });
+    console.log("Form Data:", data);
   }
 }
+
 form.addEventListener("submit", validateForm);
+
+ // console.log("Submitting:", { formData: data });
+    // fetch("/form/submit", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({ formData: data }),
+    // })
+    //   .then((response) => response.json())
+    //   .then((result) => console.log(result))
+    //   .catch((err) => console.error(err));
+
+    // localStorage.setItem("formData", JSON.stringify(formData));
+
+    // const localStorageFormData = localStorage.getItem("formData");
+    // const userData = localStorageFormData
+    //   ? JSON.parse(localStorageFormData)
+    //   : null;
 
 // ------ Function to add education record -------
 const addEduBtn = document.getElementById("add_edu");

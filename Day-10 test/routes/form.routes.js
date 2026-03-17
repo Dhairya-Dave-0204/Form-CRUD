@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getFormData } from "../controller/form.controller.js"
+import { getFormData } from "../controller/form.controller.js";
 
 export const formRouter = Router()
 

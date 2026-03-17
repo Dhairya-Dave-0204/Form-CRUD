@@ -1,9 +1,9 @@
 {
   "name": "day-10",
   "version": "1.0.0",
-  "description": "",
+  "description": "Job Application Form CRUD",
   "license": "ISC",
-  "author": "",
+  "author": "Dhairya",
   "type": "module",
   "main": "server.js",
   "scripts": {

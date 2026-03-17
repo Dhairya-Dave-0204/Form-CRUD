@@ -1,0 +1,77 @@
+{personalInfo: {…}, references: {…}, preferences: {…}, languages: Array(3), technologies: Array(3), …}
+
+education : Array(3)
+0: 
+board: "GSEB"
+course: "sdg"
+passingYear: "2020"
+percentage: "80"
+[[Prototype]]: Object
+1: {course: 'HSC', board: 'GSEB', passingYear: '2022', percentage: '60'}
+2: {course: 'B.E. I.T', board: 'GMIT', passingYear: '2026', percentage: '80.5'}
+length: 3
+[[Prototype]]: Array(0)
+
+languages: Array(3)
+0: 
+language: "hindi"
+read: true
+speak: true
+write: true
+[[Prototype]]: Object
+1: {language: 'gujarati', speak: true, write: true, read: true}
+2: {language: 'english', speak: true, write: true, read: true}
+length: 3
+[[Prototype]]: Array(0)
+
+personalInfo: 
+address: "isudfis, asuydgfh, auihsdfa"
+city: "sdgsdfsdf"
+designation: "CTO"
+dob: "2005-04-02"
+email: "ysdbfibs@google.com"
+firstName: "John"
+gender: "male"
+lastName: "Doe"
+phone: "+919883208806"
+relationship: "single"
+state: "AN"
+zipcode: "235347"
+[[Prototype]]: Object
+
+preferences: 
+currentCTC: "12"
+department: "dev"
+expectedCTC: "23"
+location: "GJ"
+noticePeriod: "3"
+[[Prototype]]: Object
+
+references: 
+contact: "9883208806"
+name: "sdfsdgfsfd"
+relation: "Friend"
+[[Prototype]]: Object
+
+technologies: Array(3)
+0: 
+level: "selected"
+technology: "js"
+[[Prototype]]: Object
+1: {technology: 'node', level: 'selected'}
+2: {technology: 'react', level: 'selected'}
+length: 3
+[[Prototype]]: Array(0)
+
+workExperience: Array(1)
+0: 
+company: "usdhfnsf"
+fromDate: "2026-01-26"
+package: "10"
+reason: "sndgs"
+referenceName: "dfghsdgfds"
+referenceNumber: "9883208806"
+toDate: "2026-03-11"
+[[Prototype]]: Object
+length: 1
+[[Prototype]]: Array(0)
